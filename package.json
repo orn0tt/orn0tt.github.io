@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "description": "Portfólio pessoal do Gabriel Braun Clemente",
   "main": "src/index.js",
+  "homepage": "https://orn0tt.github.io",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "lucide-react": "^0.263.1",
@@ -17,6 +20,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.17"
   },
